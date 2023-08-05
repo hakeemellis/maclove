@@ -1,4 +1,25 @@
 /*Hakeem CSS */
+
+.navbar-deadcenter {
+  border: none;
+  position: absolute;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.199);
+}
+
+.navbar-nav {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.nav-item .btn.account {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 50px; 
+}
+
 .preloader-wrapper {
   position: fixed;
   top: 0;
