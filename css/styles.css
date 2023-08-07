@@ -1,3 +1,19 @@
+/* FOR LOADING SCREEN */
+
+.preloader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .15s ease;
+}
+
+
 /* NAVBAR STYLING */
 
 .navbar-deadcenter { /* to style the overall navbar */
@@ -5,6 +21,21 @@
   position: sticky;
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.199);
+}
+
+.navbar-nav { /* to style the elements within the Navigation */
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-item .btn.account {
+  position: sticky;
+  top: 10px;
+  right: 10px;
+  height: 50px; 
 }
 
 .nav-elements { /* to move the nav elements how I want to */
@@ -41,51 +72,23 @@
   flex: 1; /* set to 1 to take up the available space evenly */
 }
 
-.photo-container {
+.photo-container { /* The container For Mac Photo */
   position: sticky;
   top: 0;
   right: 0;
   border: 0;
   padding: 0;
-  margin-top: -20px; /* Move the photo container upward by 20 pixels using negative margin */
-  max-width: 50%; /* Adjust the maximum width as needed to avoid overlap with text */
+  margin-top: -20px; 
+  max-width: 50%; 
 }
 
 
-.macphoto {
-  width: 100%; /* To ensure the image resizes responsively within its container */
+.macphoto { /* Actual Photo Styled (Width & Height) */
+  width: 100%; 
   height: auto;
 }
 
 
-
-.navbar-nav {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.nav-item .btn.account {
-  position: sticky;
-  top: 10px;
-  right: 10px;
-  height: 50px; 
-}
-
-.preloader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all .15s ease;
-}
 
 .fade-out-animation {
   opacity: 0;
