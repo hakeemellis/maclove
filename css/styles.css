@@ -32,6 +32,7 @@
   
   display: flex;
   justify-content: space-between; /* Ensure the content and photo-container are spaced apart */
+  margin-top: 80px;
 }
 
 .content-wrapper {
@@ -44,7 +45,7 @@
   right: 0;
   border: 0;
   padding: 0;
-  margin-top: -40px; /* Move the photo container upward by 20 pixels using negative margin */
+  margin-top: -20px; /* Move the photo container upward by 20 pixels using negative margin */
   max-width: 50%; /* Adjust the maximum width as needed to avoid overlap with text */
 }
 
@@ -485,7 +486,7 @@ text-align: center;
   .photo-container {
     position: static; /* Remove fixed positioning to allow photo to fall below text */
     max-width: 100%; /* Make sure photo takes full width in the responsive layout */
-    margin-top: 20px; /* Add some spacing between text and photo */
+    margin-top: 30px; /* Add some spacing between text and photo */
   }
 }
 
@@ -496,7 +497,7 @@ text-align: center;
 
 .content-wrapper {
   flex: 1; /* Take up available space, allowing the photo to stay fixed to the right */
-  margin-top: -40px;
+  margin-top: -10px;
 }
 
   }
