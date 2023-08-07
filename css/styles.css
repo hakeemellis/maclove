@@ -1,34 +1,36 @@
-/*Hakeem CSS */
+/* NAVBAR STYLING */
 
-.navbar-deadcenter {
+.navbar-deadcenter { /* to style the overall navbar */
   border: none;
   position: sticky;
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.199);
 }
 
-.nav-elements {
+.nav-elements { /* to move the nav elements how I want to */
   text-align: center;
-  margin-left: 200px !important; /* Adjust the margin-left value to move the navbar more to the right */
+  margin-left: 200px !important; 
 }
 
-.active {
+.active { /* to change active color */
   font-weight: bold !important;
   color: red !important;
 }
 
-
-.account-nav {
+.account-nav { /* account button edited */
   display: flex;
-  align-items: center; /* Align items vertically in the center */
-  margin-left: auto; /* Push the "account" button to the right */
+  align-items: center; 
+  margin-left: auto; 
   border: 0;
   padding: 0;
 }
 
-/* Add custom styles as needed */
 
-.container {
+/* BODY STYLING */
+
+/* Main Page */
+
+.container { /* container for text */
   
   display: flex;
   justify-content: space-between; /* Ensure the content and photo-container are spaced apart */
@@ -36,7 +38,7 @@
 }
 
 .content-wrapper {
-  flex: 1; /* Take up available space, allowing the photo to stay fixed to the right */
+  flex: 1; /* set to 1 to take up the available space evenly */
 }
 
 .photo-container {
