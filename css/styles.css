@@ -2,19 +2,70 @@
 
 .navbar-deadcenter {
   border: none;
-  position: absolute;
+  position: sticky;
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.199);
 }
+
+.nav-elements {
+  text-align: center;
+  margin-left: 200px !important; /* Adjust the margin-left value to move the navbar more to the right */
+}
+
+.active {
+  font-weight: bold !important;
+  color: red !important;
+}
+
+
+.account-nav {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  margin-left: auto; /* Push the "account" button to the right */
+  border: 0;
+  padding: 0;
+}
+
+/* Add custom styles as needed */
+
+.container {
+  
+  display: flex;
+  justify-content: space-between; /* Ensure the content and photo-container are spaced apart */
+}
+
+.content-wrapper {
+  flex: 1; /* Take up available space, allowing the photo to stay fixed to the right */
+}
+
+.photo-container {
+  position: sticky;
+  top: 0;
+  right: 0;
+  border: 0;
+  padding: 0;
+  margin-top: -40px; /* Move the photo container upward by 20 pixels using negative margin */
+  max-width: 50%; /* Adjust the maximum width as needed to avoid overlap with text */
+}
+
+
+.macphoto {
+  width: 100%; /* To ensure the image resizes responsively within its container */
+  height: auto;
+}
+
+
 
 .navbar-nav {
   display: flex;
   margin: 0 auto;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .nav-item .btn.account {
-  position: fixed;
+  position: sticky;
   top: 10px;
   right: 10px;
   height: 50px; 
@@ -36,12 +87,6 @@
 .fade-out-animation {
   opacity: 0;
   visibility: hidden;
-}
-
-.macphoto {
-    margin-left: 35%;
-    bottom: 15%;
-    position: absolute;
 }
 
 .subnav {
@@ -265,13 +310,11 @@ text-align: center;
     background-color: #A72F2F;
     color: white;
   }
-  .img, .basic, .standard, .premium {
+  
+  .basic, .standard, .premium {
     width: 100%;
   }
 
-  .img {
-    border-radius: 10px 10px 0 0;
-  }
   .btn{
     padding: 20px;
   }
@@ -431,5 +474,29 @@ text-align: center;
     .paymentcol-25 {
       margin-bottom: 20px;
     }
+
+
+  /* Media query for mobile layout (1024px or lower) */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Change flex-direction to stack content vertically on mobile */
   }
 
+  .photo-container {
+    position: static; /* Remove fixed positioning to allow photo to fall below text */
+    max-width: 100%; /* Make sure photo takes full width in the responsive layout */
+    margin-top: 20px; /* Add some spacing between text and photo */
+  }
+}
+
+.nav-elements {
+  text-align: center;
+  margin: 0 auto !important; /* Adjust the margin-left value to move the navbar more to the right */
+}
+
+.content-wrapper {
+  flex: 1; /* Take up available space, allowing the photo to stay fixed to the right */
+  margin-top: -40px;
+}
+
+  }

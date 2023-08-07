@@ -14,16 +14,6 @@ $(".contact").html("Contact Us");
 $(".account").html("Account");
 
 
-// Index Body
-
-$(".h3").html("Stay Up-to-Date Easy with the");
-$(".arial").html("<b>Latest MacBooks from Apple</b>");
-$("#indexbody").html("Get access to a Macbook Air/Pro for free as a trial or rent one for an extended period");
-$("#indexbody").append("<br><br><br>with no obligation to buy. This gives our users complete access to the latest and greatest");
-$("#indexbody").append("<br><br><br>from Apple, utilizing the latest MacOS and computer without needing to pay to own.");
-$(".register").html("REGISTER NOW");
-$(".signin").html("SIGN IN");
-
 // Footer
 
 $(".fcontact").html("support@maclove.com</a> <b>|</b> (800)-224-2101");
