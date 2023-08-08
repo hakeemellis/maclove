@@ -115,6 +115,153 @@
 
 /* PAYMENT PLAN SUB-PAGE */
 
+.plan-card-container-2 {
+  background-color: #bc2424;
+  color: #ffffff;
+  box-shadow: 5px 5px 10px grey;
+  width: 250px;
+  height: auto;
+  line-height: 35px;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  }
+
+  .ul {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    list-style: none;
+    align-items: center;
+    color: black;
+
+  }
+
+  .li {
+    margin: 0 20px 0 20px;
+    padding: 2px;
+  }
+
+  #logo {
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    border-radius: 300px;
+  }
+
+  #top_right_nav {
+    margin-left: auto;
+  }
+
+  .section {
+    background-image: url("abstract_bkg.jpg");
+    
+  }
+
+ .page_top {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 20%;
+  align-items: center;
+}
+
+#choose {
+font-size: 42px;
+color:#A72F2F;
+background-color: white;
+border-radius: 10px;
+padding: 10px;
+}
+
+.p {
+  font-size: 17px;
+}
+
+.plans {
+  font-size: 24px;
+}
+
+.span, .plans {
+  font-weight: 500;
+}
+
+.price {
+font-size: 36px;
+}
+
+#price_basic {
+color:#A72F2F;
+}
+
+#price_standard {
+  color:  white;
+}
+
+#price_premium {
+  color: #A72F2F;
+}
+
+.choose_plan, .promo_txt, .sub_button {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+}
+
+.cards {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.basic, .standard, .premium {
+  width: 100%;
+}
+
+.btn{
+  padding: 20px;
+}
+.hr{
+  width: 80%;
+}
+.button {
+  height: 40px;
+  width: 75%;
+  font-family: cursive;
+  
+}
+
+#btn_basic,#btn_premium {
+background-color: #A72F2F;
+color: #f9f9f9;
+border: none;
+}
+
+#btn_standard {
+  background-color: white;
+  color: #A72F2F;
+  border: none;
+}
+
+
+
+/* LOGIN PAGE */
+
 
 
 
@@ -133,7 +280,7 @@
     position: absolute;
 }
 
-.footertextsize {
+.textsize {
     font-size: 16px;
 }
 
@@ -234,122 +381,6 @@ clear: both;
 
 /*Abdul CSS */
 
-.body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #001fac;
-    box-sizing: border-box;
-    }
-    .ul {
-      display: flex;
-      flex-direction: row;
-      height: 50px;
-      list-style: none;
-      align-items: center;
-      color: black;
-
-    }
-    .li {
-      margin: 0 20px 0 20px;
-      padding: 2px;
-    }
-    #logo {
-      margin-right: auto;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      width: auto;
-      height: auto;
-      border-radius: 300px;
-    }
-    #top_right_nav {
-      margin-left: auto;
-    }
-    .section {
-      background-image: url("abstract_bkg.jpg");
-      
-    }
-   .page_top {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    height: 20%;
-    align-items: center;
-  }
-  #choose {
-  font-size: 42px;
-  color:#A72F2F;
-  background-color: white;
-  border-radius: 10px;
-  padding: 10px;
-  }
-
-  .p {
-    font-size: 17px;
-  }
-  .plans {
-    font-size: 24px;
-  }
-  .span, .plans {
-    font-weight: 500;
-  }
-  .price {
-  font-size: 36px;
-  }
-  #price_basic {
-  color:#A72F2F;
-  }
-  #price_standard {
-    color:  white;
-  }
-  #price_premium {
-    color: #A72F2F;
-  }
- 
-  .choose_plan, .promo_txt, .sub_button {
-    display: inline-block;
-    text-align: center;
-    justify-content: center;
-  }
-  .cards {
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
-  }
-
-
-
-  
-  .basic, .standard, .premium {
-    width: 100%;
-  }
-
-  .btn{
-    padding: 20px;
-  }
-  .hr{
-    width: 80%;
-  }
-  .button {
-    height: 40px;
-    width: 75%;
-    font-family: cursive;
-    
-  }
-  #btn_basic,#btn_premium {
-  background-color: #A72F2F;
-  color: #f9f9f9;
-  border: none;
-  }
-  #btn_standard {
-    background-color: white;
-    color: #A72F2F;
-    border: none;
-  }
   .footer {
     display: flex;
     justify-content: center;
@@ -531,6 +562,13 @@ clear: both;
   }
 
   .form-row.d-flex.justify-content-around {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  /* PAYMENTS PLAN PAGE */
+
+  .cards {
     flex-wrap: nowrap;
     flex-direction: column;
   }
