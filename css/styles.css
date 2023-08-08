@@ -113,6 +113,11 @@
 }
 
 
+/* PAYMENT PLAN SUB-PAGE */
+
+
+
+
 
 .fade-out-animation {
   opacity: 0;
@@ -225,14 +230,7 @@ display: table;
 clear: both;
 }   
 
-video{
-  width: 60%;
-  height: 30%;
-    }
 
-.vid{
-text-align: center;
-} 
 
 /*Abdul CSS */
 
