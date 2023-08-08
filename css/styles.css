@@ -46,6 +46,7 @@
 .active { /* to change active color */
   font-weight: bold !important;
   color: red !important;
+  background: transparent !important;
 }
 
 .account-nav { /* account button edited */
@@ -86,6 +87,15 @@
 .macphoto { /* Actual Photo Styled (Width & Height) */
   width: 100%; 
   height: auto;
+}
+
+/* HOW IT WORKS SUB-PAGE */
+
+.howitworks-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
 }
 
 
@@ -484,6 +494,9 @@ text-align: center;
 
   /* Media query for mobile layout (1024px or lower) */
 @media (max-width: 1024px) {
+
+  /* MAIN PAGE CSS */
+
   .container {
     flex-direction: column; /* Change flex-direction to stack content vertically on mobile */
   }
@@ -504,5 +517,12 @@ text-align: center;
   flex: 1; /* Take up available space, allowing the photo to stay fixed to the right */
   margin-top: -10px;
 }
+
+/* HOW IT WORKS PAGE CSS */
+
+  .howitworks-container {
+    flex-direction: column;
+    flex: 1;
+  }
 
   }
