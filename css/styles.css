@@ -93,9 +93,23 @@
 
 .howitworks-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px; 
+}
+
+.plan-card-container {
+  background-color: #E6E6E6;
+  color: #080808;
+  box-shadow: 5px 5px 10px grey;
+  width: 250px;
+  height: auto;
+  line-height: 35px;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px; 
 }
 
 
@@ -308,24 +322,9 @@ text-align: center;
     justify-content: center;
     
   }
-  .plan_cards,.plan_cards2 {
-    box-shadow: 5px 5px 10px grey;
-    width: 250px;
-    height: auto;
-    line-height: 35px;
-    margin: 20px;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .plan_cards{
-    background-color: #E6E6E6;
-    color: #080808;
-  }
-  .plan_cards2{
-    background-color: #A72F2F;
-    color: white;
-  }
+
+
+
   
   .basic, .standard, .premium {
     width: 100%;
@@ -490,39 +489,52 @@ text-align: center;
     .paymentcol-25 {
       margin-bottom: 20px;
     }
-
-
-  /* Media query for mobile layout (1024px or lower) */
-@media (max-width: 1024px) {
-
-  /* MAIN PAGE CSS */
-
-  .container {
-    flex-direction: column; /* Change flex-direction to stack content vertically on mobile */
   }
 
-  .photo-container {
-    position: static; /* Remove fixed positioning to allow photo to fall below text */
-    max-width: 100%; /* Make sure photo takes full width in the responsive layout */
-    margin-top: 30px; /* Add some spacing between text and photo */
+
+
+  /* MOBILE CSS */
+
+  @media (max-width: 1024px) {
+
+    /* MAIN PAGE CSS */
+
+    .container {
+      flex-direction: column; 
+    }
+
+    .photo-container {
+      position: static; /* Remove fixed positioning to allow photo to fall below text */
+      max-width: 100%; /* Make sure photo takes full width */
+      margin-top: 30px; /* Add space between text and photo */
+    }
+
+
+  .nav-elements {
+    text-align: center;
+    margin: 0 auto !important;
   }
-}
 
-.nav-elements {
-  text-align: center;
-  margin: 0 auto !important; /* Adjust the margin-left value to move the navbar more to the right */
-}
+  .content-wrapper {
+    flex: 1; /* Take up available space, allowing the photo to stay fixed to the right */
+    margin-top: -10px;
+  }
 
-.content-wrapper {
-  flex: 1; /* Take up available space, allowing the photo to stay fixed to the right */
-  margin-top: -10px;
-}
+  /* HOW IT WORKS PAGE CSS */
 
-/* HOW IT WORKS PAGE CSS */
-
-  .howitworks-container {
+   .howitworks-container {
     flex-direction: column;
-    flex: 1;
+   }
+
+  .plan-card-container {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px;
   }
 
+  .form-row.d-flex.justify-content-around {
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
+
+}
