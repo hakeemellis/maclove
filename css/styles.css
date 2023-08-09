@@ -67,10 +67,13 @@
   display: flex;
   justify-content: space-between; /* Ensure the content and photo-container are spaced apart */
   margin-top: 80px;
+  max-width: 1200px;
+  min-height: 80vh;
 }
 
 .content-wrapper {
   flex: 1; /* set to 1 to take up the available space evenly */
+  max-width: 100%;
 }
 
 .photo-container { /* The container For Mac Photo */
@@ -80,7 +83,7 @@
   border: 0;
   padding: 0;
   margin-top: -20px; 
-  max-width: 50%; 
+  max-width: 100%; 
 }
 
 
@@ -96,6 +99,7 @@
   flex-direction: column;
   align-items: center; 
   padding: 20px; 
+  min-height: 80vh;
 }
 
 .plan-card-container {
@@ -167,7 +171,7 @@
 
   .section {
     background-image: url("abstract_bkg.jpg");
-    
+    min-height: 80vh;
   }
 
  .page_top {
