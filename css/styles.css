@@ -266,8 +266,19 @@ border: none;
 
 /* LOGIN PAGE */
 
+.gradient-custom { /* background for login and sign-up */
+    
+  background: #000000;
+  min-height: 100vh; 
+}
 
 
+.center-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 .fade-out-animation {
@@ -324,10 +335,7 @@ th {
     border-color: #800020;
   }*/
 
-  .gradient-custom {
-    
-    background: #000000;
-  }
+
 
   /* Sona CSS */
   .header {
